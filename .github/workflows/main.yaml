@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@main
+      
+    - name: FTP-Deploy-Action
+      uses: sand4rt/ftp-deployer@v1.7
+      with:
+        sftp: true
+        host: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local_folder: ./
+        remote_folder: /var/www/bridget
+        port: 22
+        exclude: '[".github/**",".git/**"]'
+        cleanup: false
