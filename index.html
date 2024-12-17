@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper2 center fadeOut" id="photoPicker">
+
+    <div class="item">
+      <div class="polaroid"><img  id="puzzle_choice_1" src="img/puzzle2.1.png">
+        <div class="caption">a</div>
+      </div>
+    </div>
+  
+    <div class="item">
+      <div class="polaroid"><img  id="puzzle_choice_2" src="img/puzzle2.2.png">
+        <div class="caption">a</div>
+      </div>
+    </div>
+  
+    <div class="item">
+      <div class="polaroid"><img  id="puzzle_choice_3" src="img/puzzle2.3.png">
+        <div class="caption">a</div>
+      </div>
+    </div>
+  </div>
+
+
+    
+      <div id="bridge_gf_text" class="text fadeOut">
+        <p class="c_paragraph">My</p>
+        <p class="c_paragraph">
+          <span class="word wisteria">Girlfriend.</span>
+          <span class="word belize">Novia.</span>
+          <span class="word pomegranate">Copine.</span>
+          <span class="word green">Morosa.</span>
+          <span class="word midnight">Wife?</span>
+        </p>
+      </div>
+
+      <div id="paragraph2_wrapper" class="center2 hide fadeOut">
+        <p class="p2_p" id="paragraph_2s">Lorem ipsum odor amet, consectetuer adipiscing elit. Class nisl vulputate praesent elementum praesent dictumst semper. Habitant mi semper consequat placerat natoque. Efficitur hac sodales placerat nisi, viverra primis nunc. Mauris finibus accumsan auctor vehicula porta interdum lobortis tempus. Tristique pharetra senectus scelerisque nascetur placerat inceptos mauris finibus. Platea sit dictumst magna habitant feugiat erat lacus hendrerit.</p>
+      </div>
+      
+    
+
+    <div class="center container" id="container">
+        <h1 class="ml2" id="b_get_name">Bridget Gouker</h1>
+
+        <p id="text_title_1" class="cursor hide">
+            Dear bridget (A.K.A my amazing girlfriend!),
+        </p>
+        
+        <p id="paragraph_pt1" class="hide paragraph1">
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Class nisl vulputate praesent elementum praesent dictumst semper. Habitant mi semper consequat placerat natoque. Efficitur hac sodales placerat nisi, viverra primis nunc. Mauris finibus accumsan auctor vehicula porta interdum lobortis tempus. Tristique pharetra senectus scelerisque nascetur placerat inceptos mauris finibus. Platea sit dictumst magna habitant feugiat erat lacus hendrerit.
+        </p>
+    </div>
+
+    <div class="wrapper" id="next_btn">
+      <div class="link_wrapper">
+        <a class="btn_a" id="btn_a">NEXT</a>
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+            <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+          </svg>
+        </div>
+      </div>
+      
+    </div>
+
+    <h1 class="ml1" id="puzzleTitle1">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters" id="titleForPuzzle">♡︎ Puzzle 1 ♡︎</span>
+          <span class="line line2"></span>
+        </span>
+      </h1>
+    
+      <div id=forPuzzle class="hide"></div>
+      <ul id="menu">
+        <li>&#x2630;</li>
+        <li>default image</li>
+        <li>load image</li>
+        <li>shape: <select id="shape">
+            <option value="1" selected>classic</option>
+            <option value="2">triangle</option>
+            <option value="3">round</option>
+            <option value="4">straight</option>
+          </select></li>
+        <li>12 pieces</li>
+        <li>25 pieces</li>
+        <li>50 pieces</li>
+        <li>100 pieces</li>
+        <li>200 pieces</li>
+      </ul>
+      
+    <script src="animation.js"></script>
+    <script src="puzzle.js"></script>
+    <script src="confetti.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
